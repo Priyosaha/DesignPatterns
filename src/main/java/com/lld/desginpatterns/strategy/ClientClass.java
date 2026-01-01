@@ -6,5 +6,7 @@ public class ClientClass {
 
         Vehicle vehicle = new SportsVehicle(new NormalDriveStrategy());
         vehicle.startDrive();
+        Vehicle vehicle1 = new OffRoadVehicle(new SportyDriveStrategy());
+        vehicle1.startDrive();
     }
 }
