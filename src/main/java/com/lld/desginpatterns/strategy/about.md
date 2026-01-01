@@ -15,4 +15,12 @@ Refer Strategy Pattern | Implementation section below for a better understanding
 ![img.png](img.png)
 ![img_1.png](img_1.png)
 
+Strategy Interface( PaymentStrategy ): Defines a common interface(contract) that all concrete strategies
+must implement.
+Concrete Strategies( CreditCardPayment , PayPalPayment , UPIPayment ): Different
+implementations of the strategy interface, each representing a specific algorithm or approach.
+Context Class( ShoppingCart ): The class that uses a strategy. It maintains a reference to a strategy object
+and delegates work to it. Context uses Concrete Strategies to choose the required behavior among the available
+family of algorithms at runtime.
+
 
