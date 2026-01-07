@@ -17,14 +17,13 @@ public class WeatherStation implements WeatherObservable {
     @Override
     public void add(WeatherObserver observer) {
 
-        weatherObserverList.add(observer);
-
+        this.weatherObserverList.add(observer);
     }
 
     @Override
     public void remove(WeatherObserver observer) {
 
-        weatherObserverList.remove(observer);
+        this.weatherObserverList.remove(observer);
     }
 
     public  void  sendNotification(ObservableData observableData) throws Exception {
